@@ -1,0 +1,42 @@
+priority 1
+
+snippet -- "Title" b
+---
+title: ${1:Title Name}
+---
+
+$0
+endsnippet
+
+snippet --- "Title" b
+${1:title}
+==========
+
+$0
+endsnippet
+
+snippet * "Bold"
+**${1}** $0
+endsnippet
+
+snippet _ "Italic"
+_${1}_ $0
+endsnippet
+
+snippet *** "Bold Italic"
+***${1}*** $0
+endsnippet
+
+snippet [ "Link"
+[${1:text}](${2:link}) $0
+endsnippet
+
+snippet ![ "Image" b
+![${1:text}](${2:link})$0
+endsnippet
+
+snippet ` "Code Block"
+\`\`\` ${1:lang}
+	$0
+\`\`\`
+endsnippet
