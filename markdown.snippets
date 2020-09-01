@@ -15,6 +15,10 @@ ${1:title}
 $0
 endsnippet
 
+snippet f "inline code"
+\`${1}\` $0
+endsnippet
+
 snippet * "Bold"
 **${1}** $0
 endsnippet
@@ -31,12 +35,36 @@ snippet [ "Link"
 [${1:text}](${2:link}) $0
 endsnippet
 
-snippet ![ "Image" b
+snippet link "Link"
+[${1:text}](${2:link}) $0
+endsnippet
+
+snippet ![ "Image"
 ![${1:text}](${2:link})$0
+endsnippet
+
+snippet img "Image"
+![${1:text}](${2:link})$0
+endsnippet
+
+snippet imgw "Image with width" b
+![${1:text}](${2:link}){width=${3:600px}}
+$0
 endsnippet
 
 snippet ` "Code Block"
 \`\`\` ${1:lang}
 	$0
 \`\`\`
+endsnippet
+
+snippet cb "Code Block"
+\`\`\` ${1:lang}
+	$0
+\`\`\`
+endsnippet
+
+snippet -80 "- with 80 width" b
+--------------------------------------------------------------------------------
+$0
 endsnippet
