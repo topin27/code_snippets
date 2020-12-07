@@ -48,7 +48,7 @@ snippet img "Image"
 endsnippet
 
 snippet imgw "Image with width" b
-![${1:text}](${2:link}){width=${3:600px}}
+![${1:text}](${2:link}){width=${3:800px}}
 $0
 endsnippet
 
@@ -67,4 +67,12 @@ endsnippet
 snippet -80 "- with 80 width" b
 --------------------------------------------------------------------------------
 $0
+endsnippet
+
+snippet TODO "TODO notes"
+<font color='red'>【TODO: ${1:What to do?}】</font>$0
+endsnippet
+
+snippet FIXME "FIXME notes"
+<font color='red'>【FIXME: ${1:What's miss?}】</font>$0
 endsnippet
