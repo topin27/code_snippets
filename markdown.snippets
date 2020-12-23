@@ -48,18 +48,17 @@ snippet img "Image"
 endsnippet
 
 snippet imgw "Image with width" b
-![${1:text}](${2:link}){width=${3:800px}}
-$0
+![${1:text}](${2:link}){width=${3:800px}}$0
 endsnippet
 
 snippet ` "Code Block"
-\`\`\` ${1:lang}
+\`\`\`${1:lang}
 	$0
 \`\`\`
 endsnippet
 
 snippet cb "Code Block"
-\`\`\` ${1:lang}
+\`\`\`${1:lang}
 	$0
 \`\`\`
 endsnippet
@@ -75,4 +74,12 @@ endsnippet
 
 snippet FIXME "FIXME notes"
 <font color='red'>【FIXME: ${1:What's miss?}】</font>$0
+endsnippet
+
+snippet mi "LaTeX block inline"
+\$${1:latext_expression}\$ $0
+endsnippet
+
+snippet mb "LaTeX block" b
+\$\$${1:latex_block}\$\$$0
 endsnippet
