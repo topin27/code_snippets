@@ -1,0 +1,14 @@
+priority 1
+
+snippet tags "generate tags" b
+tags:
+	find . \( ${1:-name "*.[ch]" -o -name "*.cc" -o -name "*.hpp" -o -name "*.cpp"} \) | ctags -L -
+$0
+endsnippet
+
+snippet help "help target" b
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
+		awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", \$\$1, \$\$2}'
+$0
+endsnippet
